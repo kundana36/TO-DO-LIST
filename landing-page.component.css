@@ -1,0 +1,32 @@
+.container{
+  padding:16px;
+  margin:16px;
+}
+.sub-container{
+  padding:16px;
+  margin:16px;
+}
+.list-card{
+  max-width: 50vw;
+}
+.input{
+  width:70%;
+  padding:10px;
+  margin-top:20px;
+}
+.action{
+  display: flex;
+  flex-direction: row;
+}
+.add-btn{
+  margin-top:40px;
+}
+.content{
+  overflow-y: auto;
+  height: 100vh;
+}
+.task{
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}

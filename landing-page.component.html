@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="sub-container">
+    <mat-card class="list-card">
+      <mat-card-header style="background-color:aliceblue">
+        <mat-card-title class="mat-headline-5">TO-DO-LIST</mat-card-title>
+      </mat-card-header>
+      <div fxLayout="row" class="action">
+
+        <mat-form-field appearance="outline" class="input">
+          <mat-label>Enter a Task</mat-label>
+          <input matInput type="text" name="task" [(ngModel)="task" placeholder="Turn in the Assignment">
+          <!-- <button *ngIf="value" matSuffix mat-icon-button (click)="value=''">
+              <mat-icon>close</mat-icon>
+            </button> -->
+        </mat-form-field>
+
+        <div class="add-btn">
+          <!-- <button mat-icon-button>
+            <mat-icon>add</mat-icon>
+          </button> -->
+          <button (click) ="addTask(task)"mat-raised-button color="primary">+</button>
+        </div>
+      </div>
+      <mat-card-content>
+        <div class="mat-headline-6">Added Tasks:</div>
+        <div class="content">
+          <div *ngFor = "let task of tasksList "class="task" fxLayout="row" fxLayoutGap="30px">
+
+              <div class="mat-body-1">Update the configurations in the project </div>
+              <div><button mat-raised-button color="accent">edit</button></div>
+              <div><button mat-raised-button color="warn">Delete</button></div>
+
+          </div>
+        </div>
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+</div>
